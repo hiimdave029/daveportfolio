@@ -161,6 +161,14 @@ body{background:var(--paper);color:var(--ink)}
 .hero-art .hero-photo{width:100%;height:100%;object-fit:contain;object-position:center bottom}
 @media(max-width:800px){.hero-art{width:min(100%,390px);height:auto;min-height:0}}
 @media(max-width:560px){.hero-art{width:min(100%,390px);height:auto;min-height:0}.hero-art .hero-photo{width:100%;height:100%;object-fit:contain;object-position:center bottom}}
+/* About portrait keeps the original suit proportions and fills its frame. */
+.about-grid{grid-template-columns:minmax(300px,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,88px);align-items:center}
+.about-grid>div{min-width:0}
+.about-photo{display:block;width:min(100%,300px);max-width:none;aspect-ratio:3/4;object-fit:contain;object-position:center bottom;border-radius:18px;border:1px solid #8f81bf;background:radial-gradient(circle at 50% 35%,#49466f,#252b49 55%,#121827 100%);margin-bottom:28px;box-shadow:0 18px 50px #080c1b70;animation:border-pulse 6s ease-in-out infinite}
+.about .list div{gap:20px}.about .list div span:last-child{text-align:right}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr;gap:36px;align-items:start}.about-photo{width:min(100%,280px)}}
+@media(max-width:560px){.about .list div{font-size:14px}.about-photo{width:min(100%,260px)}}
+@media(prefers-reduced-motion:reduce){.about-photo{animation:none}}
 </style></head><body>
 <header class="wrap nav"><a class="brand" href="#top">JOHN DAVE<b>.</b></a><nav class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#results">Results</a><a class="pill" href="#contact">Get in touch ↗</a></nav></header>
 <main id="top"><section class="wrap hero"><div><div class="eyebrow">AI UGC VIDEO CREATOR / SHORT-FORM STORYTELLER</div><h1><span class="hero-line">Make them stop.</span><span class="hero-line hero-emphasis">Make them watch.</span></h1><p>AI UGC, VSL, and cinematic stories crafted to bring your ideas to life.</p><div class="actions"><a class="btn" href="#work">Watch my work ↗</a><a class="btn alt" href="#about">Meet John Dave</a></div></div><div class="hero-art"><div class="hero-halo" aria-hidden="true"></div><div class="tool-chip chip-ai" aria-hidden="true"><span class="tool-icon">✦</span><span>AI VISUALS</span></div><div class="tool-chip chip-edit" aria-hidden="true"><span class="tool-icon">✂</span><span>EDITING</span></div><div class="tool-chip chip-captions" aria-hidden="true"><span class="tool-icon">CC</span><span>CAPTIONS</span></div><div class="tool-chip chip-audio" aria-hidden="true"><span class="tool-icon">♫</span><span>AUDIO</span></div><div class="tool-chip chip-video" aria-hidden="true"><span class="tool-icon">▣</span><span>9:16 VIDEO</span></div><img class="hero-photo" src="assets/john-dave-cutout.png" alt="Portrait of John Dave"></div></section>
