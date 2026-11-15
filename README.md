@@ -1,6 +1,6 @@
 # John Dave — AI UGC Video Creator
 
-Portfolio site with twelve video samples, Facebook page results, and contact links.
+Portfolio site with sixteen video samples, Facebook page results, and contact links.
 
 Open `index.html` locally to preview the site. The `assets/` folder must stay alongside it for videos and images to load.
 
